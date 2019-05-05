@@ -35,6 +35,9 @@ $(function() {
                     if(data === 0){
                         window.location.href = baselocation + "/home";
                     }
+                    else if(data === -2){
+                        window.location.href = baselocation + "/maccount"
+                    }
                     else
                     {
                         window.alert('Invalid name or password!');

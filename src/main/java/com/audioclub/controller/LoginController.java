@@ -1,7 +1,9 @@
 package com.audioclub.controller;
 
 import com.audioclub.entity.Customer;
+import com.audioclub.entity.Manager;
 import com.audioclub.service.customerService;
+import com.audioclub.service.managerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,6 +19,8 @@ public class LoginController {
 
     @Autowired
     private customerService custService; //自动寻找合适的service的bean并注入
+    @Autowired
+    private managerService managerservice; //自动寻找合适的service的bean并注入
 
 
     @GetMapping(value = "/login")
@@ -54,6 +58,12 @@ public class LoginController {
                     return i;
                 }
             }
+        }
+        else if(usertype.equals("manager")){
+            Manager manager = managerservice.selectManagerById(id);
+            session.setAttribute("currManager",manager);
+            i=-2;
+            return i;
         }
         else{
             i=3;

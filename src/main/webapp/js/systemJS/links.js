@@ -24,6 +24,11 @@ $(function() {
         window.location.href = baselocation + "/caccount";
     })
 });
+$(function() {
+    $('#logout_bar').click(function() {
+        window.location.href = baselocation + "/login";
+    })
+});
 
 $(function() {
     $('#home_foot').click(function() {

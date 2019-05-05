@@ -1,6 +1,6 @@
 package com.audioclub.controller;
 
-import com.audioclub.entity.Customer;
+
 import com.audioclub.entity.Order;
 import com.audioclub.service.orderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,37 +15,28 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
-public class CorderController {
-
+public class MorderController {
     @Autowired
     private orderService orderservice;
 
-    @GetMapping(value = "/corder")
-    public String getOrderPage(Model model, HttpSession session){
-
-        Customer customer = (Customer)session.getAttribute("currCustomer");
-        List<Order> orders = orderservice.selectCustOrder(customer.getCustomerid());
+    @GetMapping(value = "/morder")
+    public String getLoginPage(Model model, HttpSession session){
+        List<Order> orders = orderservice.selectAllOrder();
         session.setAttribute("currOrders",orders);
 
-        return "/corder";
+        return "/morder";
     }
 
-
-    @PostMapping(value = "/corder")
+    @PostMapping(value = "/morder")
     @ResponseBody
-    public Object order(@RequestParam(required = false, value = "productid") int productid,
+    public Object order(@RequestParam(required = false, value = "customerid") int customerid,
+                        @RequestParam(required = false, value = "productid") int productid,
                         @RequestParam(required = false, value = "ordertime") String ordertime,
                         HttpSession session)
     {
         Integer i = -1;
-        Customer customer = (Customer)session.getAttribute("currCustomer");
-        int customerid = customer.getCustomerid();
 
-
-        orderservice.deleteOrder(customerid,productid,ordertime);
-        i=0;
+        orderservice.updateOrder(customerid,productid,ordertime);
         return i;
     }
-
-
 }

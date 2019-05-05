@@ -53,6 +53,7 @@
                         <li><a id="account_bar" href="javascript:;" class="active">account</a></li>
                         <li><a id="catagory_bar" href="javascript:;">catagory</a></li>
                         <li><a id="order_bar" href="javascript:;">order</a></li>
+                        <li><a id="logout_bar" href="javascript:;">logout</a></li>
                     </ul>
                     <div class="clearfix"> </div>
                 </div><!-- //navigation -->
