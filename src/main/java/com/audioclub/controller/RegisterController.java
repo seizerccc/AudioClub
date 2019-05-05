@@ -27,14 +27,14 @@ public class RegisterController {
 
     @PostMapping(value = "/register")
     @ResponseBody
-    public Object login(@RequestParam(required = false, value = "name") String name,
+    public Object register(@RequestParam(required = false, value = "name") String name,
                         @RequestParam(required = false, value = "password") String password,
                         @RequestParam(required = false, value = "phone") String phone,
                         @RequestParam(required = false, value = "address") String address,
                         HttpSession session)
     {
         //设置随机ID和返回消息
-        Integer i =0;
+        Integer i =-1;
         Random rand = new Random();
         int id = rand.nextInt(100000)+1;
 
@@ -54,6 +54,7 @@ public class RegisterController {
             try{
                 custService.insertCust(newCust);
                 session.setAttribute("currCustomer",newCust);
+                i=0;
             }catch (Exception e){
                 i=2;
                 return i;

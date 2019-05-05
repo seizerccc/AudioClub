@@ -23,7 +23,7 @@
     <!-- 页面跳转以及需要的js文件-->
     <script type="text/javascript">baselocation="${ctx}"</script>
     <script type="text/javascript" src="../../js/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript" src="../../js/systemJS/home.js"></script>
+    <script type="text/javascript" src="../../js/systemJS/detail.js"></script>
     <script type="text/javascript" src="../../js/systemJS/links.js"></script>
 </head>
 <body>
@@ -65,7 +65,7 @@
 <div class="container">
     <div class="grid_3 grid_4 w3layouts">
         <div class="w3ls-title">
-            <h3 class="agileits-title w3title1">Detail</h3>
+            <h3 class="agileits-title w3title1">${currProduct.productname}</h3>
         </div>
         <div align="middle">
             <a href="../../images/g1.jpg"  >
@@ -76,21 +76,21 @@
             <table class="table">
                 <tbody>
                 <tr>
-                    <td><h2 id="name">Name:Music1<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
+                    <td><h2 id="name">Name:${currProduct.productname}<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
                 </tr>
                 <tr>
-                    <td><h2 id="price">Price:$11<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
+                    <td><h2 id="price">Price:$${currProduct.price}<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
                 </tr>
                 <tr>
-                    <td><h2 id="stock">Stock:2<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
+                    <td><h2 id="stock">Stock:${currProduct.stock}<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
                 </tr>
                 <tr>
-                    <td><h2 id="copyright">Copyright:Jay<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
+                    <td><h2 id="copyright">Copyright:${currProduct.copyright}<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
                 </tr>
                 </tbody>
             </table>
             <div align="middle">
-                <button type="button" class="btn btn-success" style="margin-left: 10px;">订购</button>
+                <button id="btn_order" type="button" class="btn btn-success" style="margin-left: 10px;">订购</button>
             </div>
         </div>
     </div>

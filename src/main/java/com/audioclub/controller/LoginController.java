@@ -32,19 +32,20 @@ public class LoginController {
                         @RequestParam(required = false, value = "usertype") String usertype,
                         HttpSession session)
     {
-        Integer i =0;
+        Integer i =-1;
         //根据登入名字判断此用户是否存在
         if(usertype.equals("customer")){
             Customer customer = custService.selectCustById(id);
             if(customer == null)
             {
+                i=1;
                 return i;//用户id错误
             }
             else {
                 if(customer.getPassword().equals(password))
                 {
                     session.setAttribute("currCustomer",customer);
-                    i=1;//成功
+                    i=0;//成功
                     return i;
                 }
                 else

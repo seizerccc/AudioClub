@@ -85,7 +85,7 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Busy streets">
                     <div class="hover ehover14">
-                        <a href="../../images/g1.jpg" class="swipebox" >
+                        <a id="music2" href="javascript:;" class="swipebox" >
                             <img src="../../images/g1.jpg" alt="" class="img-responsive" />
                             <div class="overlay">
                                 <h4>Music2</h4>
@@ -96,7 +96,7 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Busy streets">
                     <div class="hover ehover14">
-                        <a href="../../images/g1.jpg" class="swipebox" >
+                        <a id="music3" href="javascript:;" class="swipebox" >
                             <img src="../../images/g1.jpg" alt="" class="img-responsive" />
                             <div class="overlay">
                                 <h4>Music3</h4>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Busy streets">
                     <div class="hover ehover14">
-                        <a href="../../images/g1.jpg" class="swipebox" >
+                        <a id="music4" href="javascript:;" class="swipebox" >
                             <img src="../../images/g1.jpg" alt="" class="img-responsive" />
                             <div class="overlay">
                                 <h4>Music4</h4>
@@ -118,7 +118,7 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Busy streets">
                     <div class="hover ehover14">
-                        <a href="../../images/g1.jpg" class="swipebox" >
+                        <a id="music5" href="javascript:;" class="swipebox" >
                             <img src="../../images/g1.jpg" alt="" class="img-responsive" />
                             <div class="overlay">
                                 <h4>Music5</h4>
@@ -129,7 +129,7 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Busy streets">
                     <div class="hover ehover14">
-                        <a href="../../images/g1.jpg" class="swipebox" >
+                        <a id="music6" href="javascript:;" class="swipebox" >
                             <img src="../../images/g1.jpg" alt="" class="img-responsive" />
                             <div class="overlay">
                                 <h4>Music6</h4>

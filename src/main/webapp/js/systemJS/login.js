@@ -32,7 +32,7 @@ $(function() {
                 dataType:'json',
                 success : function (data) {
                     console.log(data);
-                    if(data === 1){
+                    if(data === 0){
                         window.location.href = baselocation + "/home";
                     }
                     else

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为CustomerDao接口方法提供sql语句配置 -->
+<mapper namespace="com.audioclub.dao.orderDAO">
+
+    <select id="selectCustOrder" resultType="Order" parameterType="int">
+        SELECT * FROM orders WHERE customerid = #{customerid}
+    </select>
+
+    <select id="selectAllOrder" resultType="Order">
+        SELECT * FROM orders
+    </select>
+
+    <delete id="deleteOrder">
+        DELETE FROM orders WHERE customerid = #{arg0} and productid = #{arg1} and ordertime = #{arg2}
+    </delete>
+
+    <insert id="insertOrder" parameterType="Order">
+        INSERT INTO orders (customerid,productid,ordertime,quantity,statu)
+        VALUES(#{order.customerid},#{order.productid},#{order.ordertime},#{order.quantity},#{order.statu})
+    </insert>
+
+    <update id="updateOrder">
+        UPDATE orders
+        <set>
+            statu = '已处理'
+        </set>
+        WHERE customerid = #{arg0} and productid = #{arg1} and ordertime = #{arg2}
+    </update>
+
+
+
+</mapper>

@@ -1,3 +1,5 @@
+<%@ page import="com.audioclub.entity.Order" %>
+<%@ page import="java.util.List" %>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@include file="/WEB-INF/base.jsp" %>
 <!-- 准许获取session的值-->
@@ -65,26 +67,40 @@
 <div class="container">
     <div class="grid_3 grid_4 w3layouts">
         <h3 class="hdg">My order</h3>
-        <ul class="list-group w3-agile">
-            <li class="list-group-item">订单1：已处理
-                <button type="button" class="btn btn-success" style="margin-left: 10px;">删除</button>
-            </li>
-            <li class="list-group-item">订单1：已处理
-                <button type="button" class="btn btn-success" style="margin-left: 10px;">删除</button>
-            </li>
-            <li class="list-group-item">订单1：已处理
-                <button type="button" class="btn btn-success" style="margin-left: 10px;">删除</button>
-            </li>
-            <li class="list-group-item">订单1：已处理
-                <button type="button" class="btn btn-success" style="margin-left: 10px;">删除</button>
-            </li>
-            <li class="list-group-item">订单1：已处理
-                <button type="button" class="btn btn-success" style="margin-left: 10px;">删除</button>
-            </li>
-        </ul>
-        <div align="middle">
+
+
+            <div class="bs-docs-example">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>商品号</th>
+                        <th>数量</th>
+                        <th>订购时间</th>
+                        <th>订单状态</th>
+                        <th>#</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <%
+                        List<Order> orders = (List<Order>)session.getAttribute("currOrders");
+                        for(Order order:orders){
+                    %>
+                    <tr>
+                        <td class="i"><%=order.getProductid()%></td>
+                        <td class="q"><%=order.getQuantity()%></td>
+                        <td class="t"><%=order.getOrdertime()%></td>
+                        <td class="s"><%=order.getStatu()%></td>
+                        <td><button type="button" class="btn btn-success" style="margin-left: 10px;">删除</button></td>
+                    </tr>
+                    <%}%>
+                    </tbody>
+                </table>
+            </div>
+
+
+        <!--div align="middle">
             <button type="button" class="btn btn-success" style="margin-left: 10px;">提交</button>
-        </div>
+        </div-->
     </div>
 </div>
 
