@@ -1632,6 +1632,24 @@ ul.bs-glyphicons-list {
     background: none;
     color:#00b3fe;
 }
+.contact input[type="button"] {
+    outline: none;
+    color: #fff;
+    padding: 0.7em 5em;
+    font-size: 1.1em;
+    margin: 1em 0 0 0;
+    -webkit-appearance: none;
+    background:#00b3fe;
+    transition: 0.5s all;
+    border: 2px solid#00b3fe;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+.contact  input[type="button"]:hover {
+    background: none;
+    color:#00b3fe;
+}
 
 ::-webkit-input-placeholder {
 	color:#999 !important;
@@ -2229,6 +2247,10 @@ p {
     font-size: 0.9em; 
 }
 .contact input[type="submit"] { 
+    padding: 0.7em 4em;
+    font-size: 1em; 
+}
+.contact input[type="button"] { 
     padding: 0.7em 4em;
     font-size: 1em; 
 }

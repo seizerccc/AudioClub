@@ -16,16 +16,13 @@
     <link href="../../css/style.css" type="text/css" rel="stylesheet" media="all">
     <link href="../../css/font-awesome.css" rel="stylesheet">  <!-- font-awesome icons -->
     <!-- //Custom Theme files -->
-    <!-- js -->
-    <script src="../../js/jquery-2.2.3.min.js"></script>
-    <!-- //js -->
     <!-- web-fonts -->
     <!--link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
     <!--link href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- //web-fonts -->
     <!-- 页面跳转以及需要的js文件-->
     <script type="text/javascript">baselocation="${ctx}"</script>
-    <script type="text/javascript" src="../../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="../../js/systemJS/caccount.js"></script>
     <script type="text/javascript" src="../../js/systemJS/links.js"></script>
 </head>
@@ -72,16 +69,16 @@
             <table class="table">
                 <tbody>
                 <tr>
-                    <td><h2 id="id">ID:<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
+                    <td><h2 id="id">ID:${currCustomer.customerid}<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
                 </tr>
                 <tr>
-                    <td><h2 id="name">Name:<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
+                    <td><h2 id="name">Name:${currCustomer.customername}<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
                 </tr>
                 <tr>
-                    <td><h2 id="phone">Phone:<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
+                    <td><h2 id="phone">Phone:${currCustomer.phone}<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
                 </tr>
                 <tr>
-                    <td><h2 id="address">Address:<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
+                    <td><h2 id="address">Address:${currCustomer.address}<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
                 </tr>
                 </tbody>
             </table>

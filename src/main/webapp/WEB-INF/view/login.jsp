@@ -16,15 +16,13 @@
     <link href="../../css/style.css" type="text/css" rel="stylesheet" media="all">
     <link href="../../css/font-awesome.css" rel="stylesheet">  <!-- font-awesome icons -->
     <!-- //Custom Theme files -->
-    <!-- js -->
-    <script src="../../js/jquery-2.2.3.min.js"></script>
-    <!-- //js -->
     <!-- web-fonts -->
     <!--link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
     <!--link href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- //web-fonts -->
+    <!-- 页面跳转以及需要的js文件-->
     <script type="text/javascript">baselocation="${ctx}"</script>
-    <script type="text/javascript" src="../../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="../../js/systemJS/login.js"></script>
     <script type="text/javascript" src="../../js/systemJS/links.js"></script>
 </head>
@@ -66,22 +64,22 @@
                 <h3 class="agileits-title w3title1">Login</h3>
             </div>
             <div class="contact-form">
-                <form action="#" method="post">
+                <form action="#" method="post" name="login">
                     <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" name="id" placeholder="id" required="">
+                    <input type="text" id="id" name="id" placeholder="id" required="">
                     <br/>
                     <label>Password:</label>
-                    <input type="password"  name="password" placeholder="password" required="">
+                    <input type="password"  id="password" name="password" placeholder="password" required="">
                     <br/>
-                    <select>
-                        <option value="manager">Manager</option>
+                    <select id="userType">
                         <option value="customer">Customer</option>
+                        <option value="manager">Manager</option>
                     </select>
                     <br/>
-                    <input type="submit" value="LOGIN" >
+                    <input id="btn_login" type="button" value="LOGIN" >
                     <br/><br/>
-                    <a href="register.html">I don't hava an account>>></a>
                 </form>
+                <a id ="goRegister" href="javascript:;">I don't hava an account>>></a>
             </div>
         </div>
     </div>

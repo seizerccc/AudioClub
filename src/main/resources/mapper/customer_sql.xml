@@ -3,7 +3,28 @@
 
 <!-- 设置为CustomerDao接口方法提供sql语句配置 -->
 <mapper namespace="com.audioclub.dao.customerDAO">
+    <insert id="insertCust" parameterType="Customer">
+        INSERT INTO customer(customerid,customername,password,phone,address)
+        VALUES(#{customer.customerid},#{customer.customername},#{customer.password},#{customer.phone},#{customer.address})
+    </insert>
 
+    <select id="selectCustById" resultType="Customer" parameterType="int">
+        SELECT * FROM customer WHERE customerid = #{id}
+    </select>
+
+    <select id="selectCustByName" resultType="Customer" parameterType="String">
+        SELECT * FROM customer WHERE customername = #{name}
+    </select>
+
+    <update id="updateCust" parameterType="Customer">
+        UPDATE customer
+        <set>
+            customername = #{customer_1.customername}
+            phone = #{customer_1.phone}
+            address = #{customer_1.address}
+        </set>
+        where customerid=#{customer_1.custid}
+    </update>
 
 
 
