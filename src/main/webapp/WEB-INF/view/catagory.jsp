@@ -76,7 +76,7 @@
                 <div class="col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Busy streets">
                     <div class="hover ehover14">
                         <a id="music1" href="javascript:;" class="swipebox" >
-                            <img src="../../images/g1.jpg" alt="" class="img-responsive" />
+                            <img src="../../images/Music1.jpg" alt="" class="img-responsive" />
                             <div class="overlay">
                                 <h4>Music1</h4>
                                 <div class="info nullbutton button" data-toggle="modal" data-target="#modal14">Show More</div>
@@ -87,7 +87,7 @@
                 <div class="col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Busy streets">
                     <div class="hover ehover14">
                         <a id="music2" href="javascript:;" class="swipebox" >
-                            <img src="../../images/g1.jpg" alt="" class="img-responsive" />
+                            <img src="../../images/Music2.jpg" alt="" class="img-responsive" />
                             <div class="overlay">
                                 <h4>Music2</h4>
                                 <div class="info nullbutton button" data-toggle="modal" data-target="#modal14">Show More</div>
@@ -98,7 +98,7 @@
                 <div class="col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Busy streets">
                     <div class="hover ehover14">
                         <a id="music3" href="javascript:;" class="swipebox" >
-                            <img src="../../images/g1.jpg" alt="" class="img-responsive" />
+                            <img src="../../images/Music3.jpg" alt="" class="img-responsive" />
                             <div class="overlay">
                                 <h4>Music3</h4>
                                 <div class="info nullbutton button" data-toggle="modal" data-target="#modal14">Show More</div>
@@ -109,7 +109,7 @@
                 <div class="col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Busy streets">
                     <div class="hover ehover14">
                         <a id="music4" href="javascript:;" class="swipebox" >
-                            <img src="../../images/g1.jpg" alt="" class="img-responsive" />
+                            <img src="../../images/Music4.jpg" alt="" class="img-responsive" />
                             <div class="overlay">
                                 <h4>Music4</h4>
                                 <div class="info nullbutton button" data-toggle="modal" data-target="#modal14">Show More</div>
@@ -120,7 +120,7 @@
                 <div class="col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Busy streets">
                     <div class="hover ehover14">
                         <a id="music5" href="javascript:;" class="swipebox" >
-                            <img src="../../images/g1.jpg" alt="" class="img-responsive" />
+                            <img src="../../images/Music5.jpg" alt="" class="img-responsive" />
                             <div class="overlay">
                                 <h4>Music5</h4>
                                 <div class="info nullbutton button" data-toggle="modal" data-target="#modal14">Show More</div>
@@ -131,7 +131,7 @@
                 <div class="col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Busy streets">
                     <div class="hover ehover14">
                         <a id="music6" href="javascript:;" class="swipebox" >
-                            <img src="../../images/g1.jpg" alt="" class="img-responsive" />
+                            <img src="../../images/Music6.jpg" alt="" class="img-responsive" />
                             <div class="overlay">
                                 <h4>Music6</h4>
                                 <div class="info nullbutton button" data-toggle="modal" data-target="#modal14">Show More</div>

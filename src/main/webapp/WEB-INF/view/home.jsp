@@ -73,7 +73,7 @@
                     <li>
                         <div class="banner-textagileinfo">
                             <h6>WELCOME TO</h6>
-                            <h3>AudioClub</h3>
+                            <h3>AudioClub1</h3>
                             <div class="more">
                                 <a href="#" data-toggle="modal" data-target="#myModal"> Read More</a>
                             </div>
@@ -82,7 +82,7 @@
                     <li>
                         <div class="banner-textagileinfo">
                             <h6>WELCOME TO</h6>
-                            <h3>AudioClub</h3>
+                            <h3>AudioClub2</h3>
                             <div class="more">
                                 <a href="#" data-toggle="modal" data-target="#myModal"> Read More</a>
                             </div>
@@ -91,7 +91,7 @@
                     <li>
                         <div class="banner-textagileinfo">
                             <h6>WELCOME TO</h6>
-                            <h3>Audioclub</h3>
+                            <h3>Audioclub3</h3>
                             <div class="more">
                                 <a href="#" data-toggle="modal" data-target="#myModal"> Read More</a>
                             </div>

@@ -69,8 +69,8 @@
             <h3 class="agileits-title w3title1">${currProduct.productname}</h3>
         </div>
         <div align="middle">
-            <a href="../../images/g1.jpg"  >
-                <img src="../../images/g1.jpg" />
+            <a href="../../images/${currProduct.productname}.jpg"  >
+                <img src="../../images/${currProduct.productname}.jpg" />
             </a>
             <br/><br/><br/><br/>
 
